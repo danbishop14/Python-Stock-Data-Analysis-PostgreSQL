@@ -1,20 +1,17 @@
-README
-# Introduction
-This python script uses the pandas, yfinance, numpy, and psycopg2 libraries to pull data from Yahoo Finance for a given ticker, clean the data for compatibility with PostgreSQL, and create a local PostgreSQL database with the following tables:
+# Python-Stock-Data-Analysis-PostgreSQL
+This repository contains a Python project that imports, processes, and stores comprehensive stock market data from Yahoo Finance using Pandas, NumPy, yfinance, and PostgreSQL, enabling in-depth analysis and insights for better investment decisions.
 
-- options_chain: contains option chain data
-- hist_prices: contains historical stock prices for a given ticker
-- instit_ownership: contains institutional ownership data
-- earnings: contains earnings data
-- info: contains information about the company associated with the given ticker
+##Project Overview
+The project involves:
 
-## Setup
-1. Install the required libraries: pandas, yfinance, numpy, and psycopg2
+- Extracting stock market data from Yahoo Finance using the yfinance library.
+- Processing and cleaning the data using Pandas and NumPy.
+- Storing the processed data in a PostgreSQL database for efficient management and advanced financial analysis.
 
-2. Create a PostgreSQL database and user with the following credentials:
+The stock market data includes information such as historical stock prices, options chain data, company information, institutional ownership, balance sheets, cash flow, income statements, analyst recommendations, earnings expectations, and ESG metrics.
 
-- user: postgres
-- password: password
-- host: localhost
-- port: 5432
-- database: postgres
+##Prerequisites
+To run this project, you'll need to have the following installed:
+
+- Python 3.7 or higher
+- PostgreSQL
